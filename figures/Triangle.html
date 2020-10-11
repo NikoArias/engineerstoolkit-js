@@ -1,0 +1,34 @@
+<DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+      <h2>Area of a Triangle</h2>
+
+  <form>
+
+    <label for='output'>Area: </label> <br>
+    <input type='text' id='output' name='output' disabled= 'true' /> <br /> <br />
+    <label for='base'> base </label> <br>
+    <input typy='text' id='base' name='base' /> <br /> <br />
+    <label for='height'> height </label> <br>
+    <input typy='text' id='height' name='height' /> <br /> <br />
+    <button type="button" onclick=calculateAreaOfTriangle();>calculate</button>
+
+  </form>
+
+  <script>
+      function calculateAreaOfTriangle() {
+          var base = document.getElementById("base").value;
+          var height = document.getElementById('height').value;
+          var area = base * height/2;
+          document.getElementById("output").value = area;
+      }
+   </script>
+
+
+   <br /> <br />
+ <a href= '../index.html'> GO BACK </a>
+
+    </body>
+</html>

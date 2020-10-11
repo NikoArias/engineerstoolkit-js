@@ -1,0 +1,34 @@
+<DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+      <h2>Area of a Cone</h2>
+
+  <form>
+
+    <label for='output'>volume: </label> <br>
+    <input type='text' id='output' name='output' disabled= 'true' /> <br /> <br />
+    <label for='base'> base </label> <br>
+    <input typy='text' id='base' name='base' /> <br /> <br />
+    <label for='height'> height </label> <br>
+    <input typy='text' id='height' name='height' /> <br /> <br />
+    <button type="button" onclick=calculateAreaOfaCone();>calculate</button>
+
+  </form>
+
+  <script>
+      function calculateAreaOfaCone() {
+          var base = document.getElementById("base").value;
+          var height = document.getElementById('height').value;
+          var volume = 1/3 * base * height;
+          document.getElementById("output").value = volume;
+      }
+   </script>
+
+
+   <br /> <br />
+    <a href= '../index.html'> GO BACK </a>
+
+    </body>
+</html>

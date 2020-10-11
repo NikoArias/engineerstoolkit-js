@@ -1,0 +1,35 @@
+<DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <h1>Calculator</h1>
+        <h2>Area of a Circle</h2>
+
+    <form>
+
+      <label for='output'>Area: </label> <br>
+      <input type='text' id='output' name='output' disabled= 'true' /> <br /> <br />
+      <label for='radius'> Radius </label> <br>
+      <input typy='text' id='radius' name='radius' /> <br /> <br />
+      <button type="button" onclick=calculateAreaOfCircle();>calculate</button>
+
+    </form>
+
+    <script>
+        function calculateAreaOfCircle() {
+            var radius = document.getElementById("radius").value;
+            var area = radius * Math.PI;
+            document.getElementById("output").value = area;
+        }
+
+    </script>
+
+<br /> <br />
+ <a href= '../index.html'> GO BACK </a>
+
+
+
+
+    </body>
+</html>
